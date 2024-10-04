@@ -60,7 +60,7 @@ node flow-cli.js -g
 Para filtrar os arquivos JSON e salvar as informações específicas, use as flags -e e -o:
 
 ```bash
-node flow-cli.js -e <exchange-name> -o <output-format>
+node flow-cli.js -e <exchange-name> -o <output-name>
 ```
 
 ### Geração de Diagramas de Fluxo
@@ -68,7 +68,7 @@ node flow-cli.js -e <exchange-name> -o <output-format>
 Para gerar diagramas de fluxo a partir dos arquivos JSON, execute:
 
 ```bash
-node flow-cli.js -e <exchange-name> -o <output-format> -p nome-do-arquivo -s nome-do-arquivo
+node flow-cli.js -e <exchange-name> -o <nome-do-arquivo> -p <nome-do-arquivo> -s <nome-do-arquivo>
 ```
 
 ### Exemplos de Comando
