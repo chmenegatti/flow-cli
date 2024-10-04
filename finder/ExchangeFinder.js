@@ -14,7 +14,7 @@ class ExchangeFinder {
         content.forEach(item => {
           if (item.Exchange === exchangeValue) {
             acc.push({
-              file: fileName.replace('.json', ''),
+              "etcd": fileName.replace('.json', ''),
               "this": item.BindingKey,
               "next": item.OkRoutingKey,
               "error": item.ErrorRoutingKey
@@ -23,7 +23,7 @@ class ExchangeFinder {
         });
       } else if (content.Exchange === exchangeValue) {
         acc.push({
-          file: fileName.replace('.json', ''),
+          "etcd": fileName.replace('.json', ''),
           "this": content.BindingKey,
           "next": content.OkRoutingKey,
           "error": content.ErrorRoutingKey
